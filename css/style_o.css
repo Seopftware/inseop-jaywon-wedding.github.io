@@ -975,7 +975,7 @@ img.with-border{
 #main-slider .slide-image {
 	position:relative;
 	height:inherit;
-	width:100%;
+	width:auto;
 	background-size:cover;
 	background-position:50% 50%;
 	background-color:#FFF;
