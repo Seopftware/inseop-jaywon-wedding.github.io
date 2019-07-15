@@ -48,24 +48,6 @@
 
 	<body>
 	 <divclass="outside-bottom-bar-page">
-    <script>
-    Kakao.init('23284853bdaf509a0fcce317872f6dfcㄴ');
- 
-    Kakao.Link.createTalkLinkButton({
-      container: '#kakao-link-btn',
-      label: '김재원♥김인섭의 행복한 결혼식에 초대합니다',
-      image: {
-        src: 'https://seopftware.github.io/inseop-jaywon-wedding.github.io/images/title.jpg',
-        width: '300',
-        height: '200'
-      },
-      webButton: {
-        text: '앱으로 이동',
-        url: 'https://seopftware.github.io/inseop-jaywon-wedding.github.io'
-      }
-    });
-	</script>
-
     	<!--PRELOADER-->
         <div id="preloader">
 
@@ -822,6 +804,10 @@
 								<li><a href="tel:010-6633-9819">신부에게 전화연결</a></li>
 							</ul>
 
+								<a id="kakao-link-btn" href="javascript:;">
+      								카카오톡 공유하기
+    							</a>
+
                         </div>
                     </div> <!-- END of ROW-3 -->
              	</div>
@@ -1188,9 +1174,52 @@
             </footer>
 
 
+
+			<script type='text/javascript'>
+  //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('23284853bdaf509a0fcce317872f6dfc');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
+      objectType: 'feed',
+      content: {
+        title: '딸기 치즈 케익',
+        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com'
+        }
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com'
+          }
+        },
+        {
+          title: '앱으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com'
+          }
+        }
+      ]
+    });
+  //]]>
+</script>
+
 		<!-- jQuery -->
     	<!-- <script src="js/jquery-1.11.1.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 				<!-- Pace -->
         <script src="js/pace/pace.min.js"></script>
     	<!-- Bootstrap -->
