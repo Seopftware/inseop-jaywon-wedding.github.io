@@ -803,6 +803,12 @@
 								<li><a href="tel:010-6743-5920">신부 어머님께 전화연결</a></li>
 								<li><a href="tel:010-6633-9819">신부에게 전화연결</a></li>
 							</ul>
+
+							<br/><br/><br/>
+								<a id="kakao-link-btn" href="javascript:;">
+      								카카오톡 공유하기
+    							</a>
+
                         </div>
                     </div> <!-- END of ROW-3 -->
              	</div>
@@ -1199,6 +1205,41 @@
 
 		<audio src="./images/audio.mp3" type="audio/mpeg" controls="constrols" autoplay="autoplay" loop="loop">
 		</audio>
+			<script type='text/javascript'>
+  //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('23284853bdaf509a0fcce317872f6dfc');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
+      objectType: 'feed',
+      content: {
+        title: '김인섭♥김재원',
+        description: '귀한 걸음으로 저희들의 앞날을 축복해 주시면 더 없는 기쁨으로 간직하겠습니다.',
+        imageUrl: 'https://seopftware.github.io/inseop-jaywon-wedding.github.io/images/main.jpg',
+        link: {	
+          mobileWebUrl: 'https://seopftware.github.io/inseop-jaywon-wedding.github.io',
+          webUrl: 'https://seopftware.github.io/inseop-jaywon-wedding.github.io'
+        }
+      },
+      social: {
+        likeCount: 2836,
+		commentCount: 13,
+        sharedCount: 343
+      },
+      buttons: [
+        {
+          title: '자세히 보기',
+          link: {
+            mobileWebUrl: 'https://seopftware.github.io/inseop-jaywon-wedding.github.io',
+            webUrl: 'https://seopftware.github.io/inseop-jaywon-wedding.github.io'
+          }
+        }
+      ]
+    });
+  //]]>
+</script>
+
 		<!-- jQuery -->
     	<!-- <script src="js/jquery-1.11.1.min.js"></script> -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
