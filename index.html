@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
      	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
      	<meta name="description" content="">
 		 	<meta property="og:url" content="https://seopftware.github.io/inseop-jaywon-wedding.github.io/">
 			<meta property="og:description" content="재원과 인섭의 결혼식에 초대합니다."/>
@@ -45,6 +46,29 @@
 	</head>
 
 	<body class="outside-bottom-bar-page">
+
+	<a id="kakao-link-btn" href="javascript:;">
+      <img src="http://dn.api1.kage.kakao.co.kr/14/dn/btqa9B90G1b/GESkkYjKCwJdYOkLvIBKZ0/o.jpg" />
+    </a>
+ 
+    <script>
+    Kakao.init('23284853bdaf509a0fcce317872f6dfc');
+ 
+    Kakao.Link.createTalkLinkButton({
+      container: '#kakao-link-btn',
+      label: '카카오링크 샘플에 오신 것을 환영합니다.',
+      image: {
+        src: 'https://seopftware.github.io/inseop-jaywon-wedding.github.io/images/title.jpg',
+        width: '300',
+        height: '200'
+      },
+      webButton: {
+        text: '앱으로 이동',
+        url: 'http://4343282.tistory.com'
+      }
+    });
+	</script>
+
     	<!--PRELOADER-->
         <div id="preloader">
 
