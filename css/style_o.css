@@ -2713,7 +2713,7 @@ footer .image-divider.fixed-height{
 /* 14.3 Our Story Section						 */
 /* ----------------------------------------------*/
 #our-story{
-	padding: 140px 0
+	padding: 70px 0
 }
 
 .story-row.row {
@@ -2801,7 +2801,7 @@ footer .image-divider.fixed-height{
 /* 14.4 Where When Section						 */
 /* ----------------------------------------------*/
 #where-when{
-	padding: 120px 0
+	padding: 60px 0
 }
 
 .and{
@@ -2821,9 +2821,6 @@ footer .image-divider.fixed-height{
 /* ----------------------------------------------*/
 /* 14.5 Gallery Section							 */
 /* ----------------------------------------------*/
-#gallery-section{
-	padding: 140px 0
-}
 
 #gallery-section .photo-item{
 	margin-bottom:30px;
